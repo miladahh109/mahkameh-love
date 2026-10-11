@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>برای مهکامه‌ی من 💕</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap');
+*{box-sizing:border-box} body{margin:0;min-height:100vh;display:grid;place-items:center;overflow:hidden;font-family:'Vazirmatn',Tahoma,sans-serif;color:#fff;background:radial-gradient(circle at 20% 15%,#ffb5d4 0,transparent 30%),radial-gradient(circle at 80% 80%,#c9b5ff 0,transparent 32%),linear-gradient(135deg,#7d214e,#31133f 65%,#17112e)}
+.card{position:relative;width:min(90vw,520px);padding:42px 25px 35px;text-align:center;border:1px solid #ffffff50;border-radius:30px;background:#ffffff13;backdrop-filter:blur(12px);box-shadow:0 20px 70px #16051f70;animation:appear 1s ease both}
+.crown{font-size:42px;animation:float 2.5s ease-in-out infinite}.small{letter-spacing:2px;color:#ffd9e8;font-size:13px;margin:12px 0 8px}.title{font-size:clamp(27px,7vw,39px);line-height:1.7;font-weight:800;margin:4px 0;color:#fff4fa;text-shadow:0 0 25px #ff9ecb70}.subtitle{font-size:16px;line-height:2;color:#ffe6f1;margin:10px auto 24px;max-width:370px}.heart{font-size:33px;display:inline-block;animation:pulse 1s infinite}.btn{font:inherit;font-weight:600;border:0;border-radius:999px;padding:13px 25px;color:#7d214e;background:#fff0f7;box-shadow:0 8px 25px #17051e40;cursor:pointer;transition:.2s}.btn:active{transform:scale(.97)}.hidden{display:none;margin-top:22px;font-size:18px;line-height:2;color:#fff}.footer{font-size:12px;color:#f8cfe1;margin-top:24px}.float-heart{position:fixed;bottom:-40px;opacity:0;pointer-events:none;animation:rise linear forwards}
+@keyframes appear{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}@keyframes float{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-8px) rotate(5deg)}}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.17)}}@keyframes rise{0%{transform:translateY(0) rotate(0deg);opacity:0}10%{opacity:.9}100%{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+</style></head>
+<body>
+<main class="card">
+<div class="crown">👑💗</div>
+<div class="small">A LITTLE SURPRISE FOR YOU</div>
+<h1 class="title">مهکامه عشقم،<br>روزت مبارککک💕💕💕</h1>
+<div class="heart">💖</div>
+<p class="subtitle">برای قشنگ‌ترین دختر دنیای من؛<br>امیدوارم همیشه بخندی، بدرخشی و به تمام آرزوهای قشنگت برسی. تو لایق بهترینایی، خانوم قلبم. 🥹🌷</p>
+<button class="btn" onclick="reveal()">یه حرف دیگه هم دارم 💌</button>
+<div class="hidden" id="secret">دوستت دارمممم مهکامه‌ی منننن! 💕<br>امروز بهونه‌ست، من هر روز به داشتنت افتخار می‌کنم. 🫂❤️‍🔥</div>
+<div class="footer">با کلی عشق، فقط برای تو · M 💕</div>
+</main>
+<script>
+function reveal(){document.getElementById('secret').style.display='block';document.querySelector('.btn').textContent='قلبم مال توئه 💗';for(let i=0;i<24;i++){setTimeout(()=>{const h=document.createElement('div');h.className='float-heart';h.textContent=['💗','💕','💖','🌸','✨'][Math.floor(Math.random()*5)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(18+Math.random()*22)+'px';h.style.animationDuration=(3+Math.random()*3)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),6500)},i*80)}}
+</script>
+</body></html>
